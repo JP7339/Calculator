@@ -1,8 +1,4 @@
 
-
-
-
-
 const display = document.getElementById("screen");
 
 function appendToDisplay(input){

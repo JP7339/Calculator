@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="base">
+        <div class = "screen">
+            <input id="screen" readonly>
+        </div>
+       
+        <div class="calc-buttons">
+            <div class="calc-but-row">
+                <button class="C" onclick="clearDisplay()">C</button>
+                <button class="symbol">&#x2190;</button>
+                <button class="symbol" onclick="appendToDisplay('÷')">&divide;</button>
+            </div>
+            <div class="calc-but-row">
+                <button class="Number" onclick="appendToDisplay('7')">7</button>
+                <button class="Number" onclick="appendToDisplay('8')">8</button>
+                <button class="Number" onclick="appendToDisplay('9')">9</button>
+                <button class="symbol" onclick="appendToDisplay('×')">&times;</button>
+            </div>
+
+            <div class="calc-but-row">
+                <button class="Number" onclick="appendToDisplay('4')">4</button>
+                <button class="Number" onclick="appendToDisplay('5')">5</button>
+                <button class="Number" onclick="appendToDisplay('6')">6</button>
+                <button class="symbol" onclick="appendToDisplay('−')">&minus;</button>
+            </div>
+            <div class="calc-but-row">
+                <button class="Number" onclick="appendToDisplay('1')">1</button>
+                <button class="Number" onclick="appendToDisplay('2')">2</button>
+                <button class="Number" onclick="appendToDisplay('3')">3</button>
+                <button class="symbol" onclick="appendToDisplay('+')">&plus;</button>
+            </div>
+            <div class="calc-but-row">
+                <button class="Z" onclick="appendToDisplay('0')">0</button>
+                <button class="Number"onclick="appendToDisplay('.')">&period;</button>
+                <button class="symbol"onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

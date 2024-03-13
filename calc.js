@@ -1,6 +1,6 @@
 
 const display = document.getElementById('screen');
-let screen = "";
+
 
 function appendToDisplay(input){
     console.log(input);
@@ -9,7 +9,7 @@ function appendToDisplay(input){
 }
 s
 function subDisplay(){
-    screen = display.value;
+    let screen = display.value;
     screen = screen.substring(0,screen.length-1);
     display.value = screen;
 }
